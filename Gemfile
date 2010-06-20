@@ -17,6 +17,7 @@ group :test do
   gem 'cucumber'
   gem 'spork'
   gem 'launchy'
+  gem 'webrat'
 end
 
 # Use unicorn as the web server
