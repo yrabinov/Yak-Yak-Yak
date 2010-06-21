@@ -1,4 +1,6 @@
 Yak::Application.routes.draw do |map|
+  devise_for :admins
+
   resources :posts
 
   root :to => 'posts#index'

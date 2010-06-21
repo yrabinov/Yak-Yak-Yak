@@ -7,6 +7,7 @@ gem 'rails', '3.0.0.beta4'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml'
+gem "devise", :git => "http://github.com/plataformatec/devise.git"
 
 group :test do
   gem "rspec-rails", ">= 2.0.0.beta.8"
@@ -17,7 +18,6 @@ group :test do
   gem 'cucumber'
   gem 'spork'
   gem 'launchy'
-  gem 'webrat'
 end
 
 # Use unicorn as the web server

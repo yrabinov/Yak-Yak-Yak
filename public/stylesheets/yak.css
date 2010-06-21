@@ -2,9 +2,14 @@ body{
 }
 #content{
 	float: left;
+	background-color: #1a82f7;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #2F2727, #1a82f7);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
+	width: 80%;
 }
 #menu{
 	float:right;
-	margin:300px 200px 0 0;
+	margin:300px 3% 0 0;
 	color:white;
+	width: 17%;
 }
