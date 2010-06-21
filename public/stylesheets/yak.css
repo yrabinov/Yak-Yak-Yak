@@ -5,7 +5,9 @@ body{
 	background-color: #1a82f7;
 	background-image: -moz-linear-gradient(100% 100% 90deg, #2F2727, #1a82f7);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
-	width: 80%;
+	margin-left:20%;
+	padding-top:200px;
+	width: 60%;
 }
 #menu{
 	float:right;
