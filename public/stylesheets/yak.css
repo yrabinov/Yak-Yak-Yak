@@ -15,3 +15,98 @@ body{
 	color:white;
 	width: 17%;
 }
+
+#resume-container{
+	background-color:white;
+	font-family: verdana, sans-serif ;
+	font-size:11px;
+	color:white;
+}
+h1{	
+	height:100px;
+	font-size:24px;
+	
+	font-weight:normal;
+	color:white;
+	padding-right:60px;
+	padding-top:8px;
+}
+h1 div{
+	background:#1D7EB7;
+	margin-left:50%;
+	border:medium solid black;
+	height:95px;
+	width:360px;
+	padding:8px 0px 0px 10px;
+	-moz-border-radius:2%;
+	-webkit-border-radius:2%;
+}
+h1 p{
+	font-size:14px;
+	margin-top:5px;
+	color:white;
+	border:none;
+}
+h2{
+	color:black;
+	font-size:20px;
+	font-family:courier;
+}
+.block{
+	border:medium solid black;
+	color:black;
+	padding:10px;
+	-moz-border-radius:2%;
+	-webkit-border-radius:2%;
+}
+#block-1{
+	font-size:13px;
+	margin-left:20px;
+	background-color:#FF3030;
+	width:70%;
+	
+}
+#block-2{
+	margin-left:130px;
+	width:80%;
+	background-color:#90EE90;
+}
+#block-3{
+	width:60%;
+	margin-left:40px;
+	background-color:#FBF354;
+}
+#block-4{
+	
+		margin-left:150px;
+	background-color:#AB82FF;
+	width:55%;
+}
+ul{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+table{
+	width:100%;
+}
+.colhead{
+	font-weight:bold;
+	width:30%;
+}
+#outline{
+	height:27.94cm;
+	width:21.59cm;
+	border:black solid thin;
+	overflow:hidden;
+	padding-left:30px;
+	padding-right:20px;
+}
+h3{
+	padding-top: 10px;
+	padding-bottom:8px;
+	margin:0px;
+}
+td{width:25%;}
+.right{
+	float:right;
+}

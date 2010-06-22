@@ -14,11 +14,11 @@
 		%p.alert= alert
 		#menu
 			%ul
-				%li= link_to('Blog')
+				%li= link_to('Blog', root_path)
 				%li= link_to('About Me')
 				%li= link_to('Cool Links')
 				%li= link_to('Things I\'m interested in')
-				%li= link_to('Hire me')
+				%li= link_to('Hire Me', hireme_path)
 			
 		#content
 			= yield

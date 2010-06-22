@@ -4,6 +4,8 @@ Yak::Application.routes.draw do |map|
   resources :posts
 
   root :to => 'posts#index'
+  
+  match 'hireme' => 'pages#resume'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
