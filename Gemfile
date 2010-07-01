@@ -19,6 +19,7 @@ group :test do
   gem 'cucumber'
   gem 'spork'
   gem 'launchy'
+  
 end
 
 # Use unicorn as the web server
