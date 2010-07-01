@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+%html
+	%head
+		%title Yak
+		= javascript_include_tag "rails"
+		= csrf_meta_tag
+		= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'
+		= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js'
+		= javascript_include_tag 'jquery.livequery'
+		= javascript_include_tag "application"
+		= stylesheet_link_tag 'yak'
+		
+	%body
+		#container
+			#header 
+				%span#left
+					%br
+					#blog= link_to('Blog', root_path)
+					#about= link_to('About Me', about_path, :options => {:method => :get}, :class => "get")
+					#links= link_to('Cool Links', links_path)
+				%span#middle
+					= link_to(image_tag('../images/yakhead3.png'), root_path)
+				%span#right
+					%br
+					#interests= link_to('Interests', interesting_path)
+					#hireme= link_to('Hire Me', hireme_path)
+					#work= link_to('Projects', work_path)
+			
+			%p.notice= notice
+			%p.alert= alert
+			#content= yield
+			#sidebar
+				%h2 Search Posts
+				- form_tag posts_path, :method => :get do
+					= text_field_tag :search
+					= submit_tag 'Search'
+				%h2 Tags
+				
+				%h2 Recent Tweets
+		
+				<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				version: 2,
+				type: 'profile',
+				rpp: 3,
+				interval: 6000,
+				width: 'auto',
+				height: 300,
+				theme: {
+				shell: {
+				background: '#333333',
+				color: '#ffffff'
+				},
+				tweets: {
+				background: '#68b2d4',
+				color: '#000000',
+				links: '#eb3907'
+				}
+				},
+				features: {
+				scrollbar: true,
+				loop: false,
+				live: true,
+				hashtags: true,
+				timestamp: true,
+				avatars: false,
+				behavior: 'all'
+				}
+				}).render().setUser('yrabinov').start();
+				</script>
+

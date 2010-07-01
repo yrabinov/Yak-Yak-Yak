@@ -1,11 +1,16 @@
 Yak::Application.routes.draw do |map|
-  devise_for :admins
+  devise_for :admins, :path_names => { :sign_in => :login}
 
   resources :posts
 
   root :to => 'posts#index'
   
   match 'hireme' => 'pages#resume'
+  match 'about' => 'pages#about', :via => "get"
+  match 'links' => 'pages#links'
+  match 'interesting' => 'pages#interesting'
+  match 'work' => 'pages#work'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

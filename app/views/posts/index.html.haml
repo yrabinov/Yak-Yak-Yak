@@ -1,15 +1,18 @@
-%h1 posts
+#blog
+	- if admin_signed_in?
+		= link_to 'New Post', new_post_path
 
-- @posts.each do |post|
-	%h2= post.title
-	%p= post.content
+	- @posts.each do |post|
+		%h2= post.title
+		%p= post.content
 
-	%table
-		%tr
-			%td= link_to 'Full Post', post
-			- if admin_signed_in?
-				%td= link_to 'Edit', edit_post_path(post)
-				%td= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
-		%br
+		%table
+			%tr
+				%td= link_to 'Full Post', post
+				- if admin_signed_in?
+					%td= link_to 'Edit', edit_post_path(post)
+					%td= link_to 'Destroy', posts_path, :confirm => 'Are you sure?', :method => :delete
+			%br
 
-= link_to 'New Post', new_post_path
+			:javascript
+				$(ContentColors('#f7de42', '#000000'));
