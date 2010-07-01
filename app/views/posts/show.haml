@@ -1,0 +1,6 @@
+#blog
+	%h2= link_to @post.title, post_path(:id => @post.id)
+	%p= raw @post.content
+
+:javascript
+	$(ContentColors('#f7de42', '#000000', '#316ba5', '#0000ff'));

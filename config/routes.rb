@@ -1,5 +1,4 @@
 Yak::Application.routes.draw do |map|
-  devise_for :admins, :path_names => { :sign_in => :login}
 
   resources :posts
 

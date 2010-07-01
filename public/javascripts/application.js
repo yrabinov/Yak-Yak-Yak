@@ -16,15 +16,17 @@ function GetAjax(event){
 	return false;
 }
 
-function ContentColors(bg, color){
+function ContentColors(bg, color, h2c, h3c){
 var cssObj = {
-      'background-color' : bg,
-      'color' : color,
+    'background-color' : bg,
+    'color' : color,
 	  '-moz-box-shadow' : '0px 0px 30px' + bg, /* FF3.5+ */
 	  '-webkit-box-shadow' : '0px 0px 30px' + bg, /* Saf3.0+, Chrome */
 	  'box-shadow' : '0px 0px 30px' + bg /* Opera 10.5, IE 9.0 */
     }
 $("#content").css(cssObj);
+$("#content h2, #content h2 a").css({'color' : h2c});
+$("#content h3").css({'color' : h3c});
 }
 
 
