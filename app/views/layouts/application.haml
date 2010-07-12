@@ -2,12 +2,12 @@
 %html
 	%head
 		%title Yak
-		= javascript_include_tag "rails"
-		= csrf_meta_tag
 		= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'
 		= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js'
+		= javascript_include_tag 'jquery.rails.js'
 		= javascript_include_tag 'jquery.livequery'
-		= javascript_include_tag "application"
+		= javascript_include_tag 'application'
+		= csrf_meta_tag
 		= stylesheet_link_tag 'yak', :cache => false
 		
 	%body
@@ -31,7 +31,7 @@
 			#content= yield
 			#sidebar
 				%h2 Search Posts
-				- form_tag posts_path, :method => :get do
+				=form_tag posts_path, :method => :get do
 					= text_field_tag :search
 					= submit_tag 'Search'
 				%h2 Tags

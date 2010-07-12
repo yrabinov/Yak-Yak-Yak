@@ -2,5 +2,13 @@
 	%h2= link_to @post.title, post_path(:id => @post.id)
 	%p= raw @post.content
 
+	#comments
+		%h2 Comments
+		=render 'comments/form'
+		= link_to "Add a comment", new_post_comment_path(:post_id => @post.id), :remote => true
+		-@post.comments.each do |comment|
+			%h3=comment.title
+			%p=comment.body
+
 :javascript
 	$(ContentColors('#f7de42', '#000000', '#316ba5', '#0000ff'));
