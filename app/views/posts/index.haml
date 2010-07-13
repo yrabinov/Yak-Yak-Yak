@@ -2,7 +2,7 @@
 
 	- @posts.each do |post|
 		%h2= link_to post.title, post_path(:id => post.id)
-		%p= raw post.content.split("<p>")[1]
+		%p= raw post.content.split("</p>")[0]
 
 :javascript
 	$(ContentColors('#f7de42', '#000000', '#316ba5', 'black'));
