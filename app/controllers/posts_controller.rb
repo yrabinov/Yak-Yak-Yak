@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  uses_tiny_mce
 
   def index
     if params[:search]

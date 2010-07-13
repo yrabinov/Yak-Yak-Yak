@@ -9,6 +9,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml'
 gem "devise", :git => "http://github.com/plataformatec/devise.git"
 gem 'heroku'
+gem 'tiny_mce'
+
 
 group :test do
   gem "rspec-rails", ">= 2.0.0.beta.8"
