@@ -15,11 +15,11 @@ img {
   float: right; }
 
 #container {
-  width: 1465px;
+  width: 900px;
   margin: 0 auto; }
 
 #header {
-  height: 250px;
+  height: 148px;
   font-family: futura, century gothic, applegothic, sans-serif;
   background: url("../images/paper.jpg");
   background-repeat: repeat;
@@ -49,10 +49,10 @@ img {
     padding-left: 20px;
     float: left; }
   #header #right {
-    padding-left: 60px;
+    padding-left: 10px;
     float: left; }
   #header #blog a, #header #about a, #header #hireme a, #header #interests a, #header #work a, #header #links a {
-    font-size: 50px;
+    font-size: 25px;
     margin: 60px; }
   #header #blog a {
     color: gold; }
@@ -87,13 +87,13 @@ img {
 
 #content {
   font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 200;
   border: 6px black solid;
   clear: both;
   padding-left: 30px;
   padding-right: 30px;
-  width: 895px;
+  width: 530px;
   float: left;
   height: 100%;
   background-color: white;
@@ -111,15 +111,15 @@ img {
 
 #sidebar {
   font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 200;
   float: right;
-  width: 450px;
+  width: 250px;
   padding: 10px;
   border: solid black 6px;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
   -moz-box-shadow: 0px 0px 30px black;
   /* FF3.5+ */
   -webkit-box-shadow: 0px 0px 4px black;
@@ -127,7 +127,7 @@ img {
   box-shadow: 0px 0px 4px black;
   /* Opera 10.5, IE 9.0 */ }
   #sidebar h2 {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 200; }
 
 #menu {
@@ -139,18 +139,18 @@ img {
 #resume-container {
   background-color: white;
   font-family: verdana, sans-serif;
-  font-size: 18px;
+  font-size: 11px;
   color: white;
-  margin: 15px; }
+  margin-top: 15px; }
   #resume-container #head {
     font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 40px;
     font-weight: 200;
     color: black; }
   #resume-container h1 {
     height: 100px;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: normal;
     color: white;
     padding-right: 60px;
@@ -159,19 +159,19 @@ img {
     background: #1D7EB7;
     margin-left: 50%;
     border: medium solid black;
-    height: 115px;
-    width: 360px;
+    height: 90px;
+    width: 250px;
     padding: 8px 0px 0px 10px;
     -moz-border-radius: 2%;
     -webkit-border-radius: 2%; }
   #resume-container h1 p {
-    font-size: 18px;
+    font-size: 11px;
     margin-top: 5px;
     color: white;
     border: none; }
   #resume-container h2 {
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     font-family: courier; }
   #resume-container .block {
     border: medium solid black;
@@ -182,19 +182,20 @@ img {
   #resume-container #block-1 {
     margin-left: 20px;
     background-color: #FF3030;
-    width: 70%; }
+    width: 370px; }
   #resume-container #block-2 {
-    margin-left: 85px;
-    width: 90%;
+    margin-left: 65px;
+    width: 345px;
     background-color: #90EE90; }
   #resume-container #block-3 {
-    width: 60%;
+    width: 290px;
     margin-left: 40px;
     background-color: #FBF354; }
   #resume-container #block-4 {
+    margin-bottom: 10px;
     margin-left: 150px;
     background-color: #AB82FF;
-    width: 55%; }
+    width: 290px; }
   #resume-container ul {
     margin-top: 5px;
     margin-bottom: 5px; }

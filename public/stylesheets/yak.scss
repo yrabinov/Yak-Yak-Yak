@@ -18,11 +18,11 @@ img { border: none; }
 	float:right;
 }
 #container{
-	width:1465px;
+	width:900px;
 	margin:0 auto;
 }
 #header{
-	height: 250px;
+	height: 148px;
 	font-family: futura, century gothic, applegothic, sans-serif;
 	background: url("../images/paper.jpg");
 	background-repeat:repeat;
@@ -50,11 +50,11 @@ img { border: none; }
 		float:left;
 	}
 	#right{
-		padding-left:60px;
+		padding-left:10px;
 		float:left;
 	}	
 	#blog a, #about a, #hireme a, #interests a, #work a, #links a{
-		font-size:50px;
+		font-size:25px;
 		margin: 60px;
 	}
 	#blog a{
@@ -104,13 +104,13 @@ img { border: none; }
 
 #content{
 	font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
-	font-size:20px;
+	font-size:14px;
 	font-weight:200;
 	border:6px black solid;
 	clear: both;
 	padding-left:30px;
 	padding-right:30px;
-	width: 895px;
+	width: 530px;
 	float: left;
 	height:100%;
 	background-color:white;
@@ -125,18 +125,18 @@ img { border: none; }
 }
 #sidebar{
 	font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
-	font-size:20px;
+	font-size:14px;
 	font-weight:200;
 	float:right;
-	width:450px;
+	width:250px;
 	padding:10px;
 	border: solid black 6px;
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius:20px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
 	@include shadow(#000000);
 	h2{
-		font-size:40px;
+		font-size:25px;
 		font-weight:200;	
 	}
 }
@@ -150,19 +150,19 @@ img { border: none; }
 #resume-container{
 	background-color:white;
 	font-family: verdana, sans-serif ;
-	font-size:18px;
+	font-size:11px;
 	color:white;
-	margin:15px;
+	margin-top:15px;
 	#head{
 		font-family: 'Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
-		font-size:30px;
+		font-size:20px;
 		margin-bottom:40px;
 		font-weight:200;
 		color:black;
 	}
 	h1{	
 		height:100px;
-		font-size:26px;
+		font-size:20px;
 
 		font-weight:normal;
 		color:white;
@@ -173,21 +173,21 @@ img { border: none; }
 		background:#1D7EB7;
 		margin-left:50%;
 		border:medium solid black;
-		height:115px;
-		width:360px;
+		height:90px;
+		width:250px;
 		padding:8px 0px 0px 10px;
 		-moz-border-radius:2%;
 		-webkit-border-radius:2%;
 	}
 	h1 p{
-		font-size:18px;
+		font-size:11px;
 		margin-top:5px;
 		color:white;
 		border:none;
 	}
 	h2{
 		color:black;
-		font-size:30px;
+		font-size:20px;
 		font-family:courier;
 	}
 	.block{
@@ -200,24 +200,24 @@ img { border: none; }
 	#block-1{
 		margin-left:20px;
 		background-color:#FF3030;
-		width:70%;
+		width:370px;
 
 	}
 	#block-2{
-		margin-left:85px;
-		width:90%;
+		margin-left:65px;
+		width:345px;
 		background-color:#90EE90;
 	}
 	#block-3{
-		width:60%;
+		width:290px;
 		margin-left:40px;
 		background-color:#FBF354;
 	}
 	#block-4{
-
-			margin-left:150px;
+		margin-bottom: 10px;
+		margin-left:150px;
 		background-color:#AB82FF;
-		width:55%;
+		width:290px;
 	}
 	ul{
 		margin-top:5px;
