@@ -1,33 +1,35 @@
 %h2 Development Links
-%ul
-	%li= link_to "Railscasts", "www.railscasts.com"
-	%p Railscasts are a series of Ruby on Rails screencasts by Ryan Bates.  They are a great resource for learning how to add specific functionality in a short amount, and were instrumental in learning Rails. There is also a text version called ASCIICasts.
-	%li= link_to "GitReady", "www.gitready.com"
-	%p GitReady is a site with tips and tricks for using Git, ranging from the basic to the very advanced.
-	%li= link_to "Rails 3 Plugin Compatibility", "http://www.railsplugins.org/"
-	%p Find out or report about which gems and plugins are ready for Ruby 1.9 and Rails 3.
-	%li= link_to "CSS Colors", "http://www.somacon.com/p142.php"
-	%p Sometimes when I'm designing I can't just pick out a color from one of those circles or sliders, I have to look at a bunch of boxes like I'm at home depot.
-	%li= link_to "Website Color Combinations", "http://www.webdevelopersnotes.com/design/color_combinations_for_web_sites.php3"
-	%p Likewise when I'm thinking of a color scheme, I like to come here as a starting place to get ideas.  Usually I end up choosing a triplet then tweaking the colors slightly until they're just right.
-	%li= link_to "Rubular", "http://rubular.com/"
-	%p Rubular is a site that lets you test your ruby Regexps against your own strings.
+= link_to image_tag('../images/pages/links/railscasts.png', :width => 300), "http://www.railscasts.com"
+%p Railscasts are a series of Ruby on Rails screencasts by Ryan Bates.  They are a great resource for learning how to add specific functionality in a short amount, and were instrumental in learning Rails. There is also a text version called ASCIICasts.
+= link_to image_tag('../images/pages/links/gitready.png', :width => 300), "http://www.gitready.com"
+%p GitReady is a site with tips and tricks for using Git, ranging from the basic to the very advanced.
+= link_to image_tag('../images/pages/links/railsplugins.png', :width => 300), "http://www.railsplugins.org/"
+%p Find out or report about which gems and plugins are ready for Ruby 1.9 and Rails 3.
+= link_to image_tag('../images/pages/links/rubular.png', :width => 300), "http://rubular.com/"
+%p Rubular is a site that lets you test your ruby Regexps against your own strings.
+= link_to image_tag('../images/pages/links/csscolors.png', :width => 300), "http://www.somacon.com/p142.php"
+%p Sometimes when I'm designing I can't just pick out a color from one of those circles or sliders, I have to look at a bunch of boxes like I'm at home depot.
+= link_to "Website Color Combinations", "http://www.webdevelopersnotes.com/design/color_combinations_for_web_sites.php3"
+%p Likewise when I'm thinking of a color scheme, I like to come here as a starting place to get ideas.  Usually I end up choosing a triplet then tweaking the colors slightly until they're just right.
 	
 %h2 Interesting Links
-%ul
-	%li= link_to "TED Talks", "https://spreadsheets.google.com/lv?key=tWri7T3f4Ex6-uVU8i9-FFQ&type=view&gid=0&f=true&sortcolid=-1&sortasc=true&rowsperpage=1000"
-	%p TED is a nonprofit devoted to Ideas Worth Spreading.  They run conferences and film talks by great thinkers in all disciplines, from Bill Gates to David Blaine.  The main site is www.ted.com, the above is a link to a cool spreadsheet that attempts to rank talks by popularity.
+
+= link_to image_tag('../images/pages/links/ted.png', :width => 300), "http://www.ted.com/"
+%p 
+	TED is a nonprofit devoted to spreading great ideas.  They run conferences and film talks by thinkers in all disciplines, from Bill Gates to David Blaine.  You can also check out this 
+	= link_to "google spreadsheet,", "https://spreadsheets.google.com/lv?key=tWri7T3f4Ex6-uVU8i9-FFQ&type=view&gid=0&f=true&sortcolid=-1&sortasc=true&rowsperpage=1000"
+	which ranks the talks by popularity based on mentions in social media like twitter.
 
 %h2 Funny Links
-%ul
-	%li= link_to "The Onion", "www.theonion.com"
-	%p After several years of ignoring it I've fallen in love with the Onion again.  If you don't have time for articles and such, just check out the radio and video segments, they're great.
-	%li= link_to "The Perry Bible Fellowship", "http://pbfcomics.com/"
-	%p Some of the funniest comics I've seen.
-	%li= link_to "XKCD", "www.xkcd.com"
-	%p 'A webcomic of romance, sarcasm, math, and language.'
-	%li= link_to "Dinosaur Comics", "www.dinosaurcomics.com"
-	%p Another comic I like where the panels are always the same.
+
+= link_to image_tag('../images/pages/links/onion.png', :width => 300), "www.theonion.com"
+%p After several years of ignoring it I've fallen in love with the Onion again.  If you don't have time for articles and such, just check out the radio and video segments, they're great.
+= link_to image_tag('../images/pages/links/pbf.png', :width => 300), "http://pbfcomics.com/"
+%p Some of the funniest comics I've seen.
+= link_to image_tag('../images/pages/links/xkcd.png', :width => 300), "www.xkcd.com"
+%p 'A webcomic of romance, sarcasm, math, and language.'
+= link_to image_tag('../images/pages/links/dinosaurcomics.png', :width => 300), "www.dinosaurcomics.com"
+%p Another comic I like where the panels are always the same.
 
 :javascript
 	$(ContentColors('#9cff9c', '#000000', '#a500af', '#000000', 'red', 'green'));
