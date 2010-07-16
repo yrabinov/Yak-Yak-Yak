@@ -7,7 +7,7 @@ Yak::Application.routes.draw do |map|
   root :to => 'posts#index'
   
   match 'hireme' => 'pages#resume'
-  match 'about' => 'pages#about', :via => "get"
+  match 'about' => 'pages#about'
   match 'links' => 'pages#links'
   match 'interesting' => 'pages#interesting'
   match 'work' => 'pages#work'
