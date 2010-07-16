@@ -12,6 +12,7 @@ Yak::Application.routes.draw do |map|
   match 'interesting' => 'pages#interesting'
   match 'work' => 'pages#work'
   
+  devise_for :admins, :path_names => { :sign_in => 'login', :sign_out => 'logout'}
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,7 +1,10 @@
 #blog
-
+	- if admin_signed_in?
+		= link_to "Create New Post", new_post_path()
 	- @posts.each do |post|
 		%h2= link_to post.title, post_path(:id => post.id)
+		- if admin_signed_in?
+			= link_to "Edit Post", edit_post_path(:id => post.id)
 		%p= raw post.content.split("</p>")[0]
 
 :javascript
