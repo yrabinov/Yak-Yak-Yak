@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_filter :authenticate_admin!, :only => :new, :edit
   uses_tiny_mce
 
   def index
