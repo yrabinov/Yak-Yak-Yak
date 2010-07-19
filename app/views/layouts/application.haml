@@ -43,11 +43,13 @@
 			%p.alert= alert
 			#content= yield
 			#sidebar
+				= link_to(image_tag('../images/facebook.png', :width => 50), "http://www.facebook.com/profile.php?id=4807532")
+				= link_to(image_tag('../images/twitter.png', :width => 50), "http://twitter.com/yrabinov")
+				= link_to(image_tag('../images/linkedin.png', :width => 50), "http://www.linkedin.com/profile?viewProfile=&key=53642393&trk=tab_pro")
 				%h2 Search Posts
 				=form_tag posts_path, :method => :get do
 					= text_field_tag :search
 					= submit_tag 'Search'
-				%h2 Tags
 				
 				%h2 Recent Tweets
 		
